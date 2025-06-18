@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(145deg, #3a4452, #0a0a0a);
+}
+
+.nav-bar{
+    box-shadow: -5px 3px 20px black;
+    opacity: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    margin: 0 1rem;
+}
+.logo .fa-calculator{
+    font-size: x-large;
+    margin: 0 .5rem;
+}
+.logo span{
+    color: #a74f08;
+    font-size: 1.5rem;
+}
+.owner{
+    border-radius: 50%;
+    background-color: #a74f08;
+    color: black;
+    padding: .5rem .7rem;
+    margin: .5rem 1.5rem;
+}
+.owner .fa-user{
+    font-size: 1.5rem;
+}
+
+
+
+/* =========calculator================ */
+.container{
+    width: 100%;
+    min-height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.head{
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, 0.555);
+    margin-bottom: 1rem;
+}
+.calculator{
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 16px;
+    border: 5px solid rgb(39, 39, 39);
+    background-color: transparent;
+    box-shadow: 0px 3px 15px rgb(0, 0, 0);
+}
+
+input{
+    border-radius: 10px;
+    width: 265px;
+    border: none;
+    background: transparent;
+    margin: 1rem .3rem;
+    padding: .8rem;
+    font-size: 2.2rem;
+    cursor: pointer;
+    text-align: right;
+    color: white;
+    box-shadow: 0px 3px 15px rgba(32, 32, 32, 0.89);
+    outline: none;
+}
+.math-op{
+    color: #ff7300;
+}
+.ac-dl{
+    color: greenyellow;
+}
+button{
+    margin: .5rem;
+    width: 3rem;
+    height: 3rem;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 50%;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.082);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+.equal-btn{
+    width: 7rem;
+    border-radius: .5rem;
+}
+input::placeholder{
+    color: white;
+}
+
+
+
+
+@media screen and (max-width: 500px){
+    .logo{
+        margin: 0 .5rem;
+    }
+    .logo span{
+        font-size: 1.2rem;
+    }
+    .owner{
+        margin: .5rem 1.2rem;
+    }
+    .owner .fa-user{
+        font-size: 1.2rem;
+    }
+    .owner p{
+        font-size: .6rem;
+        font-weight: 800;
+    }
+    .head{
+        margin-top: 1rem;
+        font-size: 1.2rem;
+    }
+    .calculator{
+        padding: 0;
+        width: 250px;
+        border-radius: 16px;
+        border: 2px solid rgb(39, 39, 39);
+    }
+    input{
+        margin: 1rem .7rem;
+        width: 90%;
+        border-radius: 10px;
+        background: transparent;
+    }
+    button{
+        margin: .5rem;
+        width: 2.6rem;
+        height: 2.6rem;
+        font-size: 15px;
+    }
+    .equal-btn{
+        width: 6rem;
+        border-radius: .5rem;
+    }
+    
+}
